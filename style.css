@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=REM:wght@200;400;800&family=Roboto:wght@300;500;700&family=Tektur:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.container {
+  font-family: "Roboto", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-weight: lighter;
+  font-size: 1.4rem;
+}
+
+#gif {
+  margin: 1rem auto;
+  width: 20rem;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.controllers {
+  width: 100%;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-solid {
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+input {
+  margin-top: 1rem;
+  cursor: pointer;
+  accent-color: rgb(252, 128, 182);
+  background-color: white;
+  color: white;
+}
+
+.fa-solid {
+  color: rgb(252, 128, 182);
+}
+.main-btn {
+  background-color: rgb(252, 128, 182);
+  width: 3rem;
+  height: 3rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.time-container {
+  display: flex;
+  justify-content: space-between;
+  font-weight: lighter;
+}
+
+
+@media(max-width:500px){
+  .container{
+    width:100%;
+    border-radius: 0rem;
+  }
+}
+
+@media(max-width:400px){
+  .container{
+    width:100%;
+    border-radius: 0rem;
+  }
+
+  #gif{
+    width:100%;
+  }
+}
+
+
+@media(max-width:300px){
+
+  html{
+    font-size: 90%
+  };
+  .container{
+    width:100%;
+    border-radius: 0rem;
+  }
+
+  #gif{
+    width:100%;
+  }
+
+  .main-btn{
+    padding:1rem
+  }
+}
